@@ -34,18 +34,6 @@ Constraints:
 // BITWISE XOR operator ^
 const singleNumberXOR = nums => nums.reduce((a,b) => a ^ b)
 
-function singleNumberClever(nums){
-  let result = nums[0];
-  for (let i = 1, n = nums.length; i < n; i++){
-    if(result > 0){
-      result -= nums[i]
-    } else {
-      result += nums[i]
-    }
-  }
-  return Math.abs(result)
-}
-
   //HASH TABLE
 function singleNumberHash(nums) {
   const evenNumbersTracker = {};
